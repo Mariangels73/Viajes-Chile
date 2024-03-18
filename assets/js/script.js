@@ -50,3 +50,15 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+
+  //tooltips en boton enviar 
+  $(document).ready(function () {
+    // Inicializar tooltips
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('#btn-enviar').click(function () {
+        // Mostrar una alerta con el mensaje deseado
+        alert('Información enviada...');
+    });
+});
