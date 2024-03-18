@@ -27,3 +27,13 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+//desaparecer tarjetas de informacion
+
+$(document).ready(function () {
+    // Manejar el evento click en cualquier título de receta
+    $('.toggle-titulo').click(function () {
+        // Utilizar toggle en el contenido de la tarjeta correspondiente
+        $(this).closest('.destacado-card').find('.toggle-contenido').toggle();
+    });
+});
