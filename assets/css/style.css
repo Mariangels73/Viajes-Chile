@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*barra de navegacion*/
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar.transparent {
+    background-color: transparent !important;
+}
+
+.navbar.scrolled {
+    background-color: #17a2b8  !important; /* Cambiar a color azul al hacer scroll */
+}
+
+.icono-central{
+    padding: 0px;
+}
+
+/*inicio*/
+
+#quienes-somos{
+    background: black;
+}
+
+/*linea de separacion*/
+
+.linea-separadora {
+    border-bottom: 1px solid white;
+    margin: 25px 0;
+    margin-bottom: 50px;
+}
