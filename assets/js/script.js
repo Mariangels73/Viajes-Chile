@@ -37,3 +37,16 @@ $(document).ready(function () {
         $(this).closest('.destacado-card').find('.toggle-contenido').toggle();
     });
 });
+
+
+//tarjetas
+
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach(card => {
+      card.addEventListener('click', function() {
+        this.classList.toggle('active');
+      });
+    });
+  });

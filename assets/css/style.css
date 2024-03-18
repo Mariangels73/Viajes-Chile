@@ -46,3 +46,9 @@ body {
 .card.active .card-body {
     display: block;
 }
+
+.linea-separadora2 {
+    border-bottom: 1px solid white;
+    margin: 25px 0;
+    margin-bottom: 50px;
+}
