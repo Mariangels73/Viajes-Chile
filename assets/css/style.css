@@ -35,3 +35,14 @@ body {
     margin: 25px 0;
     margin-bottom: 50px;
 }
+
+/*destacados*/
+
+.card .card-body {
+    display: none;
+  }
+
+
+.card.active .card-body {
+    display: block;
+}

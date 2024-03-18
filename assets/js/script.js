@@ -1,0 +1,29 @@
+$(document).ready(function () {
+    // Agrega clase "transparent" a la barra de navegación al inicio
+    $('.navbar').addClass('transparent');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').removeClass('transparent').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled').addClass('transparent');
+        }
+    });
+});
+
+//accion al hacer click en la nav redirija al sitio en la pag
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scroll al hacer clic en enlaces de la barra de navegación
+    const links = document.querySelectorAll('.navbar-nav a.nav-link');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
